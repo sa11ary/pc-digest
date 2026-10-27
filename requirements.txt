@@ -1,0 +1,6 @@
+anthropic>=0.40
+feedparser>=6.0
+requests>=2.31
+beautifulsoup4>=4.12
+APScheduler>=3.10.4,<4
+tzdata  # нужен для часовых поясов на Windows
