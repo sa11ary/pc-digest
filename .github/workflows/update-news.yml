@@ -37,7 +37,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NEWS_TZ: Europe/Kyiv # замените на свой часовой пояс, если нужно
-          NEWS_BOT_UA: "PCDigestBot/1.0 (+https://github.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ)"
+          NEWS_BOT_UA: "PCDigestBot/1.0 (+https://github.com/sa11ary/pc-digest)"
         run: python pc_news_bot.py run
         # Без ИИ (бесплатно): замените строку выше на  python pc_news_bot.py run --no-ai
 
