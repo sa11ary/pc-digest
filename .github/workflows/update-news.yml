@@ -35,11 +35,11 @@ jobs:
 
       - name: Собрать новости и обновить страницу
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # бесплатный ключ Google AI Studio
           NEWS_TZ: Europe/Kyiv # замените на свой часовой пояс, если нужно
-          NEWS_BOT_UA: "PCDigestBot/1.0 (+https://github.com/sa11ary/pc-digest)"
+          NEWS_BOT_UA: "PCDigestBot/1.0 (+https://github.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ)"
         run: python pc_news_bot.py run
-        # Без ИИ (бесплатно): замените строку выше на  python pc_news_bot.py run --no-ai
+        # Совсем без ИИ: замените строку выше на  python pc_news_bot.py run --no-ai
 
       - name: Сохранить список обработанных новостей
         run: |
